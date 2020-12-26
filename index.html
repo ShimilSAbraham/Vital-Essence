@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vital Essence</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body> 
+
+        <div class="imgcontainer">
+            <div class="slider"></div>
+        </div>
+
+        <div class="container" id="container">
+            <!-- Welcome Hospital -->
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Welcome, Hospital</h1>
+                    <br>
+                    <br>
+                    <input id="name_hos" type="text" placeholder="Enter Hospital Id" class="name_hos">
+                    <input id="pass_hos" type="password" placeholder="Enter Password" value="" required>      
+                    <button>Sign In as hospital</button>
+                </form>
+            </div>
+            <!-- Welcome User part -->
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Welcome User</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input id="name_user" type="text" placeholder="Enter Username" class="name_user">
+                    <input id="pass_user" type="password" placeholder="Enter Password" value="" required>      
+                    <a href="#">Forgot your password?</a>
+                    <button>Sign In as user</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <!-- login as user switch -->
+                    <div class="overlay-panel overlay-left">
+                        <h1>Not an Authority?</h1>
+                        <p>If you came here by mistake, the button placed below is your chance</p>
+                        <button class="ghost" id="signIn">Login as User</button>
+                    </div>
+                    <!-- login as hospital switch -->
+                    <div class="overlay-panel overlay-right">
+                        <h1>Wrong Place?</h1>
+                        <p>If you are an authority click here to proceed</p>
+                        <button class="ghost" id="signUp">Login as hospital</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>   
+    </body>
+</html>
