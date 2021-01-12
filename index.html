@@ -20,9 +20,9 @@
                     <h1>Welcome, Hospital</h1>
                     <br>
                     <br>
-                    <input id="name_hos" type="text" placeholder="Enter Hospital Id" class="name_hos">
+                    <input id="name_hos" class="name_hos" type="text" placeholder="Enter Hospital Id">
                     <input id="pass_hos" type="password" placeholder="Enter Password" value="" required>      
-                    <button>Sign In as hospital</button>
+                    <button onclick="HospitalLogin()" type="submit" value="Login"><a href="hospital_login.html">Sign in as Hospital</a></button>
                 </form>
             </div>
             <!-- Welcome User part -->
@@ -35,10 +35,13 @@
                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <span>or use your account</span>
-                    <input id="name_user" type="text" placeholder="Enter Username" class="name_user">
+                    <input id="name_user" class="name_user" type="text" placeholder="Enter Username">
                     <input id="pass_user" type="password" placeholder="Enter Password" value="" required>      
                     <a href="#">Forgot your password?</a>
-                    <button>Sign In as user</button>
+                    <button onclick="UserLogin()" type="submit" value="Login"><a href="user_login.html">Sign In as user</a></button>
+                    <div class="bar"></div>
+                    <span id="sign_up">or start a new journey with us</span>
+                    <button type="signup" ><a href="signup.html">Sign Up</a></button>
                 </form>
             </div>
             <div class="overlay-container">
