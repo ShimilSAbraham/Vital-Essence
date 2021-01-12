@@ -126,7 +126,7 @@ span {
 }
 
 a {
-	color: #333;
+	color: #FFF;
 	font-size: 13px;
 	text-decoration: none;
 	margin: 15px 0;
@@ -144,8 +144,11 @@ button {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
+	cursor: pointer;
 }
-
+button:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+}
 button:active {
 	transform: scale(0.95);
 }
@@ -158,6 +161,18 @@ button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
+#sign_up{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.bar{
+    color: black;
+    background-color: #2D68C4;
+    margin: 10px;
+    height: 2px;
+    width: 80%;
+}
+
 
 form {
 	background-color: #ffffff;
@@ -311,6 +326,7 @@ input:focus {
 }
 
 .social-container a {
+	color: #2D68C4;
 	border: 1px solid #DDDDDD;
 	border-radius: 50%;
 	display: inline-flex;
@@ -321,3 +337,4 @@ input:focus {
 	width: 40px;
 }
 
+.forgot{color: rgb(17, 16, 16);}
