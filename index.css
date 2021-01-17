@@ -378,7 +378,7 @@ button.ghost {
 
 .container.right-panel-active .overlay-left
 {
-    transform: translateY(90%); 
+    transform: translateY(100%); 
 }
 }
 
