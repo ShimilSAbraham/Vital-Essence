@@ -107,8 +107,7 @@ body {
 {
 	.imgcontainer .slider 
 	{
-		width: 150px;
-		height: 150px;
+		transform: scale(0.8);
 	}
 }
 
@@ -366,7 +365,7 @@ button.ghost {
 
 .container.right-panel-active .sign-up-container
 {
-    transform: translateY(110%); /* try 100 and 120 */
+    transform: translateY(90%); /* try 100 and 120 */
     opacity: 1;
     z-index: 5;
 }
@@ -378,7 +377,7 @@ button.ghost {
 
 .container.right-panel-active .overlay-left
 {
-    transform: translateY(90%); 
+    transform: translateY(100%); 
 }
 }
 
