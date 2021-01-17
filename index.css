@@ -1,8 +1,5 @@
-@media only screen and (max-width:500px)
-{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 
 * {
 	box-sizing: border-box;
@@ -17,8 +14,8 @@ body {
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Poppins', sans-serif;
-	/* height: 110vh; */
 }
+
 @keyframes gradient 
 {
   0% 
@@ -39,8 +36,8 @@ body {
 .imgcontainer .slider 
 {
   margin: 0 auto;
-  width: 150px; /* changed */
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-image: url(hospital-icons/1.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -106,7 +103,27 @@ body {
   }
 }
 
-h1
+@media only screen and (max-width:500px)
+{
+	.imgcontainer .slider 
+	{
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media only screen and (min-width:500px)
+{
+	body
+	{
+		height: 100vh;
+		margin: -20px 0 50px;
+	}
+}
+@media only screen and (max-width:500px)
+{
+
+	h1
 {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -364,114 +381,11 @@ button.ghost {
     transform: translateY(90%); 
 }
 }
+
+
 @media only screen and (min-width:500px)
 {
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-	  background: linear-gradient(-45deg, #1F75FE,#6A5ACD, #3457D5, #23a6d5,#4D4DFF, #23d5ab,#191970);
-background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	font-family: 'Poppins', sans-serif;
-	height: 100vh;
-	margin: -20px 0 50px;
-}
-@keyframes gradient 
-{
-  0% 
-  {
-		background-position: 0% 50%;
-	}
-  50% 
-  {
-		background-position: 100% 50%;
-	}
-  100% 
-  {
-		background-position: 0% 50%;
-	}
-}
-
-/* Hospital Icon */
-.imgcontainer .slider 
-{
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  background-image: url(hospital-icons/1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 30px;
-  padding-top: 25px;
-  margin-bottom: 20px;
-  background-color: white;
-  border-radius: 150px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-  0 10px 10px rgba(0,0,0,0.22);
-  animation: slide 25s ease-in-out infinite;
-}
-
-/* Hospital Icons Animation  */
-@keyframes slide
-{
-  20%
-  {
-    background-image: url(hospital-icons/2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  40%
-  {
-    background-image: url(hospital-icons/3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  50%{
-    background-image: url(hospital-icons/4.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  }
-  60%
-  {
-    background-image: url(hospital-icons/5.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  70%
-  {
-    background-image: url(hospital-icons/6.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  80%
-  {
-    background-image: url(hospital-icons/7.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  90%
-  {
-    background-image: url(hospital-icons/8.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  100%
-  {
-    background-image: url(hospital-icons/1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-
+    
 h1 {
 	font-weight: bold;
 	margin: 0;
