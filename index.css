@@ -164,7 +164,7 @@ a
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
                 0 10px 10px rgba(0,0,0,0.22);
     width: 95%;
-    height: 80vh;
+    height: 90vh;  /*was 80vh*/
     padding-bottom: 70%;
     position: relative;
 	overflow: hidden;
@@ -360,7 +360,7 @@ button.ghost {
 
 .container.right-panel-active .overlay-container
 {
-    transform: translateY(-110%); 
+    transform: translateY(-124%); 
 }
 
 .container.right-panel-active .sign-up-container
@@ -377,7 +377,7 @@ button.ghost {
 
 .container.right-panel-active .overlay-left
 {
-    transform: translateY(100%); 
+    transform: translateY(118%); 
 }
 }
 
