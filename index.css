@@ -1,4 +1,372 @@
+@media only screen and (max-width:400px)
+{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(-45deg, #1F75FE,#6A5ACD, #3457D5, #23a6d5,#4D4DFF, #23d5ab,#191970);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Poppins', sans-serif;
+	/* height: 110vh; */
+}
+@keyframes gradient 
+{
+  0% 
+  {
+		background-position: 0% 50%;
+	}
+  50% 
+  {
+		background-position: 100% 50%;
+	}
+  100% 
+  {
+		background-position: 0% 50%;
+	}
+}
+
+/* Hospital Icon */
+.imgcontainer .slider 
+{
+  margin: 0 auto;
+  width: 150px; /* changed */
+  height: 150px;
+  background-image: url(hospital-icons/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  padding-top: 25px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 150px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+  0 10px 10px rgba(0,0,0,0.22);
+  animation: slide 25s ease-in-out infinite;
+}
+
+/* Hospital Icons Animation  */
+@keyframes slide
+{
+  20%
+  {
+    background-image: url(hospital-icons/2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  40%
+  {
+    background-image: url(hospital-icons/3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  50%{
+    background-image: url(hospital-icons/4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  60%
+  {
+    background-image: url(hospital-icons/5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  70%
+  {
+    background-image: url(hospital-icons/6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  80%
+  {
+    background-image: url(hospital-icons/7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  90%
+  {
+    background-image: url(hospital-icons/8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  100%
+  {
+    background-image: url(hospital-icons/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-container h1
+{
+    color: #2D68C4;
+}
+
+p {
+	font-size: 13px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	margin: 20px 0 30px 10px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a
+{
+    color: #FFF;
+	font-size: 13px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+
+.container
+{
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+                0 10px 10px rgba(0,0,0,0.22);
+    width: 95%;
+    height: 80vh;
+    padding-bottom: 70%;
+    position: relative;
+	overflow: hidden;
+}
+
+.form-container form
+{
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-container
+{
+    margin: 5px 0;
+}
+
+.social-container a
+{
+    color: #2D68C4;
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px;
+	height: 40px;
+	width: 40px;
+
+}
+
+.or{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #2D68C4;
+}
+
+.forgot {
+    font-size: 12px;
+    color: rgb(17, 16, 16);
+    margin-top: -5px;
+}
+
+/* or start a new */
+#sign_up
+{
+    line-height: 20px;
+    color: #2D68C4;
+}
+
+input {
+	background-color: #eee;
+    color: #2D68C4;
+	border: none;
+    border-radius: 20px;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+input:focus {
+	outline: none;
+}
+
+button {
+	border-radius: 50px;
+	border: 1px solid #2D68C4;
+	background-color: #2D68C4;
+	font-family: 'Poppins', sans-serif;
+	color: #FFFFFF;
+	font-size: 1px;
+	font-weight: bold;
+	padding: 12px 25px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+    font-size: 13px;
+    background-color: white;
+    color: #2D68C4;
+	border-style: none;
+	box-shadow: 5px 5px 20px rgba(255,255,255,0.2),
+                -5px -5px 20px rgba(255,255,255,0.2);
+    margin-left: 25%;
+}
+
+.form-container
+{
+    position: absolute;
+    top: 10px;
+    /* height: 100%; */
+    transition: all 0.6s ease-in-out;
+
+}
+
+.sign-in-container
+{
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.sign-up-container
+{
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+
+/* sign in as user button */
+.login-user
+{
+    margin-top: -10px;
+    
+}
+
+#signIn
+{
+    margin-left: -5px;
+}
+
+.overlay-container {
+	position: relative;
+	top: 102%;
+	width: 100%;
+	height: 200%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.overlay {
+	background: #00BFFF;
+	background: -webkit-linear-gradient(-45deg,#6F00FF,#00BFFF);
+	background: linear-gradient(-45deg,#00BFFF,#6F00FF);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+    height: 200%;
+    position: relative;
+    transform: translateY(0);
+    transition: tranform 0.6s ease-in-out;
+}
+
+.overlay-panel 
+{
+    position: absolute;
+    margin: 20% 0;
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 200%; */
+    text-align: center;
+    transform: translateY(0);
+    transition: tranform 0.6s ease-in-out;
+}
+
+.overlay-right
+{
+    margin-bottom: 20%;
+    padding-bottom: 20%;
+    margin-top: -5%;
+}
+
+
+.overlay-right button
+{
+    transform: translateX(-20%);
+}
+
+.overlay-left
+{
+    transform: translateY(-150%);
+}
+
+.container.right-panel-active .sign-in-container
+{
+    transform: translateY(-100%); 
+}
+
+.container.right-panel-active .overlay-container
+{
+    transform: translateY(-110%); 
+}
+
+.container.right-panel-active .sign-up-container
+{
+    transform: translateY(130%); 
+    opacity: 1;
+    z-index: 5;
+}
+
+.container.right-panel-active .overlay
+{
+    transform: translateY(9%); 
+}
+
+.container.right-panel-active .overlay-left
+{
+    transform: translateY(90%); 
+}
+}
+@media only screen and (min-width:500px)
+{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 
 * {
@@ -338,3 +706,4 @@ input:focus {
 }
 
 .forgot{color: rgb(17, 16, 16);}
+}
