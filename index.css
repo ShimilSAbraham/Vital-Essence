@@ -168,6 +168,7 @@ a
     padding-bottom: 70%;
     position: relative;
 	overflow: hidden;
+margin-bottom: 10px;
 }
 
 .form-container form
@@ -278,7 +279,7 @@ button.ghost {
 }
 .sign-up-container
 {
-    left: 0;
+    top: 5%;
     width: 100%;
     z-index: 1;
     opacity: 0;
@@ -360,7 +361,7 @@ button.ghost {
 
 .container.right-panel-active .overlay-container
 {
-    transform: translateY(-124%); 
+    transform: translateY(-120%); 
 }
 
 .container.right-panel-active .sign-up-container
@@ -377,7 +378,7 @@ button.ghost {
 
 .container.right-panel-active .overlay-left
 {
-    transform: translateY(118%); 
+    transform: translateY(120%); 
 }
 }
 
