@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vital Essence</title>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="index.css"> -->
         <link rel="stylesheet" href="index.css">
     </head>
     <body> 
@@ -22,7 +23,7 @@
                     <br>
                     <input id="name_hos" class="name_hos" type="text" placeholder="Enter Hospital Id">
                     <input id="pass_hos" type="password" placeholder="Enter Password" value="" required>      
-                    <button onclick="HospitalLogin()" type="submit" value="Login"><a href="hospital_login.html">Sign in as Hospital</a></button>
+                    <button onclick="HospitalLogin()" type="submit" value="Login"><a href="bio_userid.html">Sign in as Hospital</a></button>
                 </form>
             </div>
             <!-- Welcome User part -->
@@ -34,11 +35,11 @@
                         <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <span>or use your account</span>
+                    <span class="or">or use your account</span>
                     <input id="name_user" class="name_user" type="text" placeholder="Enter Username">
                     <input id="pass_user" type="password" placeholder="Enter Password" value="" required>      
                     <a href="#" class="forgot">Forgot your password?</a>
-                    <button onclick="UserLogin()" type="submit" value="Login"><a href="user_login.html">Sign In as user</a></button>
+                    <button onclick="UserLogin()" type="submit" value="Login" class="login-user"><a href="old_user.html">Sign In as user</a></button>
                     <div class="bar"></div>
                     <span id="sign_up">or start a new journey with us</span>
                     <button type="signup" ><a href="signup.html">Sign Up</a></button>
